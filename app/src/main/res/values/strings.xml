@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Passman</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="s1">اینستاگرام</string>
+    <string name="s2">توییتر</string>
+    <string name="s3">فیسبوک</string>
+    <string name="s4">تیک تاک</string>
+    <string name="s5">لینکدین</string>
+    <string name="s6">جیمیل</string>
+    <string name="s7">سایر</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>

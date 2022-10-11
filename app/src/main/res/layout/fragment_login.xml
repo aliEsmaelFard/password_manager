@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.LoginFragment"
+    android:orientation="vertical"
+    android:background="@color/dark_background">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:hint="پسورد"
+        android:background="@color/white"
+        android:layout_marginHorizontal="@dimen/mar_et"
+        android:outlineAmbientShadowColor="@color/teal_700"
+        android:textColorHint="@color/text_white"
+        app:hintTextColor="@color/text_white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/size_et" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/login_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="تغییر رمز"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/login_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="دخیره"
+        android:layout_marginHorizontal="@dimen/mar_et"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/teal_700"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ورود"
+            android:textSize="@dimen/save_bt_size"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_background"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

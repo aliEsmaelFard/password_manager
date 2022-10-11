@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.FirstRegisterFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:hint="پسورد"
+        android:background="@color/white"
+        android:layout_marginHorizontal="@dimen/mar_et"
+        android:outlineAmbientShadowColor="@color/teal_700"
+        android:textColorHint="@color/text_white"
+        app:hintTextColor="@color/text_white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/first_register_new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/size_et" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:hint="تکرار پسورد"
+        android:background="@color/white"
+        android:layout_marginHorizontal="@dimen/mar_et"
+        android:outlineAmbientShadowColor="@color/teal_700"
+        android:textColorHint="@color/text_white"
+        app:hintTextColor="@color/text_white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/first_register_new_pass_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/size_et" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/first_register_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="ذخیره و ورود"
+        android:layout_marginHorizontal="@dimen/mar_et"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/teal_700"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ذخیره و ورود"
+            android:textSize="@dimen/save_bt_size"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_background"
+            />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

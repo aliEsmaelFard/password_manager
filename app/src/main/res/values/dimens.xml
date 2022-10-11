@@ -1,0 +1,8 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+ <dimen name="fragment_horizontal_margin">16dp</dimen>
+ <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="size_et">20sp</dimen>
+    <dimen name="mar_et">50dp</dimen>
+    <dimen name="save_bt_size">23sp</dimen>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_background">
+
+    <ImageView
+        android:id="@+id/account_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/account_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="serif"
+        android:text="ali_esmael_fard"
+        android:textColor="@color/text_white"
+        android:textSize="20sp"
+        app:layout_constraintRight_toLeftOf="@id/account_image"
+        app:layout_constraintTop_toTopOf="@id/account_image" />
+
+    <ImageView
+        android:id="@+id/account_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="@id/account_image"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/account_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ic_baseline_edit_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/seePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/ic_baseline_remove_red_eye_24"
+        app:layout_constraintRight_toLeftOf="@id/account_image"
+        app:layout_constraintTop_toBottomOf="@id/account_user_name" />
+
+    <TextView
+        android:id="@+id/pass_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="رمز: "
+        android:textColor="@color/teal_700"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/seePass"
+        app:layout_constraintRight_toLeftOf="@id/seePass"
+        app:layout_constraintTop_toTopOf="@id/seePass" />
+
+    <LinearLayout
+        android:id="@+id/linear_pass"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintRight_toLeftOf="@id/pass_text"
+        app:layout_constraintBottom_toBottomOf="@id/pass_text"
+        app:layout_constraintTop_toTopOf="@id/pass_text"
+        >
+
+        <ImageView
+            android:id="@+id/account_password_copy"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/ic_baseline_content_copy_24"
+            app:layout_constraintBottom_toBottomOf="@id/account_password_copy"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/account_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ahda+6daadhidadu"
+            android:textColor="@color/text_white"
+            android:textSize="18sp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/under_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
